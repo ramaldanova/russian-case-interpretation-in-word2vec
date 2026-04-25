@@ -10,13 +10,13 @@ The hypothesis was **not confirmed** – but the experiment provides valuable in
 
 > If a word's grammatical case is encoded in its distributional semantics, then word2vec vectors for words with the **same case** should cluster together more tightly than vectors for different cases, and these clusters should be visible after linear projection (PCA / LDA).
 
-## 📁 Repository Contents
+## Repository Contents
 
 - `word2vec_case_clustering_experiment_full_pipeline.ipynb` – Main Jupyter notebook with all code, visualizations, and commentary.
 - `requirements.txt` – Python dependencies for reproducing the environment.
 - `README.md` – This file.
 
-## 🛠️ Methods
+## Methods
 
 ### Data
 - **Corpus:** Russian SynTagRus from Universal Dependencies (`ru_syntagrus-ud-train-b.conllu`).
@@ -44,4 +44,4 @@ The hypothesis was **not confirmed** – but the experiment provides valuable in
 | **LDA** | Clusters are tight and oriented in different directions, but remain close together. No clear boundaries. | Word2vec vectors encode **weak case‑related signal** – not strong enough for clean separation, but directional consistency shows LDA can extract some structure. |
 
 ### Conclusion
-> Static word2vec embeddings do **not** robustly encode grammatical case information in a linearly separable way. The signal is present but weak, and overwhelmed by semantics and frequency. For morphology‑sensitive tasks, subword‑aware models (FastText) or contextualized embeddings (BERT) may be more promising.
+Static word2vec embeddings do **not** robustly encode grammatical case information in a linearly separable way. The signal is present but weak, and overwhelmed by semantics and frequency. For morphology‑sensitive tasks, subword‑aware models (FastText) or contextualized embeddings (BERT) may be more promising.
