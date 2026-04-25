@@ -1,12 +1,12 @@
 # russian-case-interpretation-in-word2vec
 
-## 📌 Overview
+## Overview
 
 This project explores whether **grammatical case relations in Russian** can be inferred from distributional semantics using static word embeddings (word2vec). The core hypothesis is that nouns sharing the same case should form interpretable clusters in the vector space, revealing that case information is encoded in distributional semantics.
 
 The hypothesis was **not confirmed** – but the experiment provides valuable insights into the limitations of static embeddings for morphological tasks. The repository documents a full research pipeline: data preprocessing, model training, dimensionality reduction (PCA / LDA), and critical analysis of negative results.
 
-## 🧪 Hypothesis
+## Hypothesis
 
 > If a word's grammatical case is encoded in its distributional semantics, then word2vec vectors for words with the **same case** should cluster together more tightly than vectors for different cases, and these clusters should be visible after linear projection (PCA / LDA).
 
@@ -36,7 +36,7 @@ The hypothesis was **not confirmed** – but the experiment provides valuable in
 - **Principal Component Analysis (PCA)** (unsupervised) – projects vectors onto principal components that maximize variance.
 - **Linear Discriminant Analysis (LDA)** (supervised) – uses case labels to find directions that maximize between‑class separation while minimizing within‑class variance.
 
-## 📉 Key Findings
+## Key Findings
 
 | Method | Observation | Interpretation |
 |--------|-------------|----------------|
