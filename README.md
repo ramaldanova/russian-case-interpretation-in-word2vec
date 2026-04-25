@@ -8,7 +8,7 @@ The hypothesis was **not confirmed** – but the experiment provides valuable in
 
 ## 🧪 Hypothesis
 
-> If a word's grammatical case is encoded in its distributional semantics, then word2vec vectors for words with the **same case** (e.g., all `стол_Nom` forms) should cluster together more tightly than vectors for different cases, and these clusters should be visible after linear projection (PCA / LDA).
+> If a word's grammatical case is encoded in its distributional semantics, then word2vec vectors for words with the **same case** should cluster together more tightly than vectors for different cases, and these clusters should be visible after linear projection (PCA / LDA).
 
 ## 📁 Repository Contents
 
